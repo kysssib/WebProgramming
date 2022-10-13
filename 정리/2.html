@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head><title>다음 장</title></head>
+    <body>
+        <a href="1.html">이전으로</a>
+        <details>
+            <summary>1. 시멘틱 태그</summary>
+            <details>
+                <summary>예시 1</summary>
+                <iframe src="simentic/simentic.html" width="600" height="800"></iframe>
+            </details>
+            <details>
+                <summary>예시 2</summary>
+                <iframe src="simentic/simentic2.html" width="600" height="800"></iframe>
+            </details>
+        </details>
+
+        <details>
+            <summary>2. 웹 폼</summary>
+            <details>
+                <summary>&lt;form name="폼 이름" action="실행 응용 프로그램" method="전송 방식"&gt;</summary>
+                폼으로 묶는 태그
+                <ul>
+                    <li>name : 이름 지정</li>
+                    <li>action : submit 누를 시 지정된 용용 프로그램 실행</li>
+                    <li>enctype : 인코딩 방식 설정</li>
+                    <li>method : 폼 코드 웹 서버에 전송하는 방식 "get/post"</li>
+                    <li>target : 전송 받은 데이터 출력할 윈도우 지정</li>
+                </ul>
+            </details>
+            <details>
+                <summary>폼 요소 종류</summary>
+                <details>
+                    <summary>텍스트 바</summary>
+                    <ul>
+                        <li>
+                            <details>
+                            <summary>텍스트 바 : &lt;input type="text" size="최대 크기" value="미리 입력 됨"&gt;</summary>
+                                text : <input type="text" size="15" value='value="미리 입력 됨"'>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>입력 가리기 : &lt;input type="password"&gt;</summary>
+                                password : <input type="password" size="15">
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>입력 힌트 : &lt;input type="text" placeholder="예시"&gt;</summary>
+                                hint : <input type="text" placeholder='placeholder=" "'>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>형식을 가진 입력</summary>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>이메일 입력 : &lt;input type="eamil" placeholder="예시 이메일"&gt;</summary>
+                                            email : <input type="email" placeholder='placeholder="id@host"'>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>전화 입력 : &lt;input type="tel" placeholder="예시 전화번호"&gt;</summary>
+                                            tel : <input type="tel" placeholder='placeholder="010-1234-5678"'>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>링크 입력 : &lt;input type="url" placeholder="예시 링크"&gt;</summary>
+                                            url : <input type="url" placeholder='placeholder="http://"'>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>검색어 입력 : &lt;input type="serach" placeholder="예시 검색어"&gt;</summary>
+                                            검색 : <input type="serach" placeholder='placeholder="검색어"'>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <form name="textareas">
+                                <details>
+                                    <summary>여러줄 입력 : </summary>
+                                    &lt;textarea cols="열 개수" row="행 개수" name="이름" wrap="OFF/HARD/SOFT"&gt;<br>미리 입력 됨&lt;/textarea&gt;<br>
+                                    textarea : <textarea cols="20" rows="5" name="textarea">미리 입력 됨</textarea>
+                                    <details>
+                                        <summary>wrap="hard"</summary>
+                                        wrap="hard" : <textarea cols="20" rows="5" name="wrap='hard'" wrap="hard">미리 입력 됨</textarea>
+                                    </details>
+                                    <details>
+                                        <summary>wrap="soft"</summary>
+                                        wrap="soft" : <textarea cols="20" rows="5" name="wrap='soft'" wrap="soft">미리 입력 됨</textarea>
+                                    </details>
+                                    <button type="reset">reset</button>
+                                </details>
+                            </form>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>데이터 리스트 이용</summary>
+                                텍스트 바와 같이 사용<br>
+                                <form>
+                                    list : <input type="text" list="datalists">
+                                    <datalist id="datalists">
+                                        <option value='value="1"'></option>
+                                        <option value='value="2"'></option>
+                                        <option value='value="3"'></option>
+                                    </datalist>
+                                </form>
+                                <details>
+                                    <summary>사용법</summary>
+                                    list : &lt;input type="text" list="datalists"&gt;<br>
+                                    &lt;datalist id="datalists"&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1번째 값"&gt;&lt;/option&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2번째 값"&gt;&lt;/option&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3번째 값"&gt;&lt;/option&gt;<br>
+                                    &lt;/datalist&gt;
+                                </details>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>select 이용</summary>
+                                <form>
+                                    <select name="selects">
+                                        <option value="1">value="1"</option>
+                                        <option value="2">value="2"</option>
+                                        <option value="3">value="3"</option>
+                                    </select>
+                                </form>
+                                <details>
+                                    <summary>사용법</summary>
+                                    &lt;select name="selects"&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;1번째 목록 이름&lt;/option&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;2번째 목록 이름&lt;/option&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;3번째 목록 이름&lt;/option&gt;<br>
+                                    &lt;/select&gt;
+                                </details>
+                                <details>
+                                    <summary>option에 selected 넣은 곳에 Default 값으로 선택되어 나옴</summary>
+                                    <form>
+                                        <select name="selects">
+                                            <option value="1">value="1"</option>
+                                            <option value="2" selected>value="2"</option>
+                                            <option value="3">value="3"</option>
+                                        </select>
+                                    </form>
+                                </details>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>버튼</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>&lt;input&gt;표현</summary>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>제출 버튼 : &lt;input type="submit" value="버튼 내 text"&gt;</summary>
+                                            submit : <input type="submit" value='value=" "'>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>그냥 버튼 : &lt;input type="button" value="버튼 내 text"&gt;</summary>
+                                            button : <input type="button" value='value=" "'>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>리셋 버튼 : &lt;input type="reset" value="버튼 내 text"&gt;</summary>
+                                            reset : <input type="reset" value='value=" "'>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>이미지 버튼 : &lt;input type="image" src="이미지 주소"&gt;</summary>
+                                            image : <input type="image" src="media/mac.png">
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>&lt;button&gt;표현</summary>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>제출 버튼 : &lt;button type="submit"&gt;버튼 내 텍스트&lt;/button&gt;</summary>
+                                            submit : <button type="submit">submit</button>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>그냥 버튼 : &lt;button type="button"&gt;버튼 내 텍스트&lt;/button&gt;</summary>
+                                            button : <button type="button">button</button>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>리셋 버튼 : &lt;button type="reset"&gt;버튼 내 텍스트&lt;/button&gt;</summary>
+                                            reset : <button type="reset">reset</button>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>이미지 버튼 : &lt;button&gt;&lt;img src="이미지 주소"&gt;&lt;/button&gt;</summary>
+                                            image : <button type="image"><img src="media/mac.png"></button>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <form>
+                                <details>
+                                    <summary>체크 박스 : &lt;input type="checkbox" value="박스의 값"&gt;</summary>
+                                    checkbox1 : <input type="checkbox" value="1"><br>
+                                    checkbox2 : <input type="checkbox" value="2"><br>
+                                    <details>
+                                        <summary>checkedbox : <input type="checkbox" value="3" checked></summary>
+                                        &lt;input type="checkbox" value="박스의 값" checked&gt;
+                                    </details>
+                                </details>
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <details>
+                                    <summary>라디오 버튼 : &lt;input type="radio" name="같은 그룹이름" value="그룹에서의 값"&gt;</summary>
+                                    radio : <input type="radio" name="radios" value="1"><br>
+                                    radio : <input type="radio" name="radios" value="2"><br>
+                                    <details>
+                                        <summary>checkedradio : <input type="radio" name="radios" value="3" checked></summary>
+                                        &lt;input type="radio" name="같은 그룹이름" value="그룹에서의 값" checked&gt;
+                                    </details>
+                                </details>
+                            </form>
+                        </li>
+                    </ul>
+                </details>
+                
+                <details>
+                    <summary>색 입력</summary>
+                    <details>
+                        <summary>&lt;input type="color" value="기본 색상 코드" onchange="태그"=this.value&gt;</summary>
+                        onchange="태그"=this.value 는 태그를 이 value 색상으로 바꿈<br>
+                        ex : (document.body.style.color) 문서의 바디의 색상 변경<br>
+                        color : <input type="color" value="00BFFF" onchange="document.body.style.color=this.value">
+                    </details>
+                </details>
+
+                <details>
+                    <summary>시간 입력</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>년/월 : &lt;input type="month" value="Default 시간 (ex : 2022-10)"</summary>
+                                <input type="month" value="2022-10">
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>년/몇 번째 주 : &lt;input type="week" value="Default 주 (ex : 2022-W16)"</summary>
+                                <input type="week" value="2022-W40">
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>년/월/일 : &lt;input type="date" value="Default 시간 (ex : 2022-10-04)"</summary>
+                                <input type="date" value="2022-10-04">
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>해당 나라의 년/월/일/오전,오후/시/분/초/100분의 1초 :<br>&lt;input type="datetime-local" value="Default 시간 (ex : 2022-10-04T21:38:45.34)"</summary>
+                                <input type="datetime-local" value="2022-10-04T21:38:45.34">
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>시/분 : &lt;input type="time" value="Default 시간 (ex : 21:40)"</summary>
+                                <input type="time" value="21:40">
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>스핀 버튼</summary>
+                    <details>
+                        <summary>&lt;input type="number" min="최솟값" max="최댓값" step="증감기준"&gt;</summary>
+                        <input type="number" min="0.0" max="10.0" step="0.5">
+                    </details>
+                </details>
+
+                <details>
+                    <summary>슬라이드 바</summary>
+                    <input type="range" min="0" max="100" list="ranges">
+                    <datalist id="ranges">
+                        <option value="10" label="Low"></option>
+                        <option value="50" label="Medium"></option>
+                        <option value="100" label="High"></option>
+                    </datalist>
+                    <details>
+                        <summary>사용 법</summary>
+                        &lt;input type="range" min="0" max="100" list="ranges"&gt;<br>
+                        &lt;datalist id="ranges"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="10" label="Low"&gt;&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="50" label="Medium"&gt;&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="100" label="High"&gt;&lt;/option&gt;<br>
+                        &lt;/datalist&lt;
+                    </details>
+                </details>
+
+            </details>
+            <details>
+                <summary>캡션 만들기</summary>
+                <details>
+                    <summary>&lt;label&gt;이용</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>1번</summary>
+                                <label>캡션 : <input type="text"></label><br>
+                                &lt;label&gt;캡션 : &lt;input type="text"&gt;&lt;/label&gt;
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>2번</summary>
+                                <label for="caption">캡션 : </label><input type="text" id="caption"><br>
+                                &lt;label for="caption"&gt;캡션 : &lt;/label&gt;&lt;input type="text" id="caption"&gt;
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </details>
+        </details>
+
+
+    </body>
+</html>
