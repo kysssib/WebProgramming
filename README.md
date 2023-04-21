@@ -27,7 +27,6 @@ HTML Programming
             <hr>
             &lt;hr&gt;는 수평선 긋기
         </details>
-
         <details>
             <summary>2. 꾸미기 형식</summary>
             <p>
@@ -48,7 +47,6 @@ HTML Programming
                 </div>
             </p>
         </details>
-
         <details>
             <summary>3. 하이퍼링크 및 사진</summary>
             <h2 id="id2">&lt;h2 id="id2"&gt;&lt;/h2&gt;</h2>
@@ -70,7 +68,6 @@ HTML Programming
             <a href="blank.html">&lt;a href="blank.html"&gt;&lt;/a&gt;</a><br>
             <a href="blank.html" target="_blank">&lt;a href="blank.html" target="_blank"&gt;&lt;/a&gt;</a><br>
         </details>
-
         <details>
             <summary>4. 표와 리스트</summary>
             <details>
@@ -207,7 +204,6 @@ HTML Programming
             </details>
 
         </details>
-
         <details>
             <summary>5. 인라인 프레임과 타깃</summary>
             <details>
@@ -232,7 +228,6 @@ HTML Programming
                 <iframe src="parenttarget.html" width="450" height="200"></iframe>
             </details>
         </details>
-
         <details>
             <summary>6. 미디어 삽입</summary>
             <details>
