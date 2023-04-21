@@ -2,3 +2,270 @@
 
 HTML Programming
 22 2nd WebProgramming
+
+<details>
+            <summary>1. 문서의 기본</summary>
+            <details>
+                <summary>기초</summary>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&lt;title&gt;탭 이름&lt;/title&gt;<br>
+                &emsp;&lt;/head&gt;<br>
+                &emsp;&lt;body&gt;<br>
+                &emsp;&emsp;바디 부분<br>
+                &emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </details>
+            <h1>&lt;h1&gt;&lt;/h1&gt;</h1>
+            <h2>&lt;h2&gt;&lt;/h2&gt;</h2>
+            <h3>&lt;h3&gt;&lt;/h3&gt;</h3>
+            띄어&lt;br&gt;<br>
+            쓰기&lt;br&gt;<br>
+            <p>&lt;p&gt;단락&lt;/p&gt;</p>
+            <p>&lt;p&gt;나누기&lt;/p&gt;</p>
+            <hr>
+            &lt;hr&gt;는 수평선 긋기
+        </details>
+
+        <details>
+            <summary>2. 꾸미기 형식</summary>
+            <p>
+                <b>&lt;b&gt;&lt;/b&gt;</b><br>
+                <strong>&lt;strong&gt;&lt;/strong&gt;</strong><br>
+                <em>&lt;em&gt;&lt;/em&gt;</em><br>
+                <i>&lt;i&gt;&lt;/i&gt;</i><br>
+                <b><i>&lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt;</i></b><br>
+                기본 폰트<small>&lt;small&gt;&lt;/small&gt;</small><br>
+                <del>&lt;del&gt;&lt;/del&gt;</del><br>
+                <ins>&lt;ins&gt;&lt;/ins&gt;</ins><br>
+                기본 폰트<sup>&lt;sup&gt;&lt;/sup&gt;</sup><br>
+                기본 폰트<sub>&lt;sub&gt;&lt;/sub&gt;</sub><br>
+                <mark>&lt;mark&gt;&lt;/mark&gt;</mark>
+                <div style="background-color: darkgoldenrod;padding: 20px;">
+                    &lt;div style="background-color: darkgoldenrod;padding: 20px;"&gt;
+                    <span style="color:lawngreen">&lt;span style="color:lawngreen"&gt;&lt;/span&gt;</span>&lt;/div&gt;
+                </div>
+            </p>
+        </details>
+
+        <details>
+            <summary>3. 하이퍼링크 및 사진</summary>
+            <h2 id="id2">&lt;h2 id="id2"&gt;&lt;/h2&gt;</h2>
+            <a href="http://google.com">&lt;a href="http://google.com"&gt;&lt;/a&gt;</a><br>
+            <details>
+                <summary>사진</summary>
+                <img src="media/mac.png" width="100" alt="Fail Load"><br>
+                &lt;img src="media/mac.png" width="100" alt="Fail Load"&gt;<br>
+                <img src="media/tem.png" width="100" alt="Fail Load"><br>
+                &lt;img src="media/tem.png" width="100" alt="Fail Load"&gt;<br>
+                <img src="media/nope.png" width="100" alt="Fail Load"><br>
+                &lt;img src="media/nope.png" width="100" alt="Fail Load"&gt;<br>
+                <img src="https://phinf.pstatic.net/contact/20220424_203/1650804446086W4Dl1_JPEG/profileImage.jpg?type=f130_130" alt="naver"><br>
+                &lt;img src="외부링크" alt="naver"&gt;<br>
+                <a href="http://google.com"><img src="media/mac.png" width="100"></a><br>
+                &lt;a href="http://google.com"&gt;&lt;img src="media/mac.png" width="100"&gt;&lt;/a&gt;<br>
+            </details>
+            <a href="#id2">&lt;a href="#id2"&gt;&lt;/a&gt;</a><br>
+            <a href="blank.html">&lt;a href="blank.html"&gt;&lt;/a&gt;</a><br>
+            <a href="blank.html" target="_blank">&lt;a href="blank.html" target="_blank"&gt;&lt;/a&gt;</a><br>
+        </details>
+
+        <details>
+            <summary>4. 표와 리스트</summary>
+            <details>
+                <summary>표</summary>
+                <table border="1">
+                    <caption>제목</caption>
+                    <tbody>
+                        <thead>
+                            <tr><th>강조</th><td>비강조</td></tr>
+                        </thead>
+                        <tr>
+                            <td rowspan="2">열1</td>
+                            <td colspan="2">열1</td>
+                            <td>열1</td>
+                        </tr>
+                        <tr>
+                            <td>열2</td>
+                            <td>열2</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4"><img src="media/mac.png" width="100"></th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><th colspan="4">th는 가운데 정렬</th></tr>
+                    </tfoot>
+                </table>
+                <details>
+                    <summary>위의 표 코드</summary>
+                    &lt;table border="1"&gt;<br>
+                    &emsp;&lt;caption&gt;제목&lt;/caption&gt;<br>
+                    &emsp;&lt;thead&gt;<br>
+                    &emsp;&emsp;&lt;tr&gt;&lt;th&gt;강조&lt;/th&gt;&lt;td&gt;비강조&lt;/td&gt;&lt;/tr&gt;<br>
+                    &emsp;&lt;/thead&gt;<br>
+                    &emsp;&lt;tbody&gt;<br>
+                    &emsp;&emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&emsp;&lt;td rowspan="2"&gt;열1&lt;/td&gt;<br>
+                    &emsp;&emsp;&emsp;&lt;td colspan="2"&gt;열1&lt;/td&gt;<br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;열1&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;/tr&gt;<br>
+                    &emsp;&emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;열2&lt;/td&gt;<br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;열2&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;/tr&gt;<br>
+                    &emsp;&emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&emsp;&lt;th colspan="4"&gt;&lt;img src="media/mac.png" width="100"&gt;&lt;/th&gt;<br>
+                    &emsp;&emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;/tbody&gt;<br>
+                    &emsp;&lt;tfoot&gt;<br>
+                    &emsp;&emsp;&lt;tr&gt;&lt;th colspan="4"&gt;th는 가운데 정렬&lt;/th&gt;&lt;/tr&gt;<br>
+                    &emsp;&lt;/tfoot&gt;<br>
+                    &lt;/table&gt;<br>
+                </details>
+            </details>
+
+            <details>
+                <summary>리스트</summary>
+                <details>
+                    <summary>1) 순서 있는 리스트</summary>
+                    <ol type="A">
+                        <li>내용</li>
+                        <li>내용</li>
+                        <li>내용</li>
+                    </ol>
+                    <details>
+                        <summary>코드</summary>
+                        &lt;ol type="A"&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br>
+                    </details>
+                </details>
+                <details>
+                    <summary>2) 순서 없는 리스트</summary>
+                    <ul>
+                        <li>내용</li>
+                        <li>내용</li>
+                        <li>내용</li>
+                    </ul>
+                    <details>
+                        <summary>코드</summary>
+                        &lt;ul&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                    </details>
+                </details>
+                <details>
+                    <summary>3) 중첩 리스트</summary>
+                    <ul>
+                        <li>내용</li>
+                        <ul>
+                            <li>내용</li>
+                            <li>내용</li>
+                        </ul>
+                        <li>내용</li>
+                        <ol type="1">
+                            <li>내용</li>
+                            <li>내용</li>
+                        </ol>
+                    </ul>
+                    <details>
+                        <summary>코드</summary>
+                        &lt;ul&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&emsp;&lt;ul&gt;<br>
+                        &emsp;&emsp;&emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&emsp;&emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&emsp;&lt;/ul&gt;<br>
+                        &emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&emsp;&lt;ol&gt;<br>
+                        &emsp;&emsp;&emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&emsp;&emsp;&lt;li&gt;내용&lt;/li&gt;<br>
+                        &emsp;&emsp;&lt;/ol&gt;<br>
+                        &lt;/ul&gt;<br>
+                    </details>
+                </details>
+                <details>
+                    <summary>4) 정의 리스트</summary>
+                    <dl>
+                        <dt><strong>제목</strong></dt>
+                        <dd>내용</dd>
+                    </dl>
+                    <details>
+                        <summary>코드</summary>
+                        &lt;dl&gt;<br>
+                        &emsp;&lt;dt&gt;&lt;strong&gt;제목&lt;/strong&gt;&lt;/dt&gt;<br>
+                        &emsp;&lt;dd&gt;내용&lt;/dd&gt;<br>
+                        &lt;/dl&gt;<br>
+                    </details>
+                </details>
+            </details>
+
+        </details>
+
+        <details>
+            <summary>5. 인라인 프레임과 타깃</summary>
+            <details>
+                <summary>&lt;iframe src="html 주소" width="200" height="100"&gt;오류 시 출력문&lt;/iframe&gt;</summary>
+                    <iframe src="blank.html" width="200" height="100">
+                        ERROR
+                    </iframe>
+            </details>
+            <details>
+                <summary>scrdoc="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;hello&lt;/body&gt;&lt;/html&gt;" 추가시</summary>
+                    <iframe src="blank.html" width="200" height="100" srcdoc="<html><head></head><body>hello<br>src 속성은 무시됨</body></html>">
+                        ERROR
+                    </iframe>
+            </details>
+            <details>
+                <summary>프레임 안의 프레임</summary>
+                <iframe src="leftframe.html" name="left" width="100" height="200"></iframe>
+                <iframe src="rightframe.html" name="right" width="400" height="200"></iframe>
+            </details>
+            <details>
+                <summary>Target</summary>
+                <iframe src="parenttarget.html" width="450" height="200"></iframe>
+            </details>
+        </details>
+
+        <details>
+            <summary>6. 미디어 삽입</summary>
+            <details>
+                <summary>동영상</summary>
+                &lt;video src="비디오 주소" width="영상 폭" height="영상 높이" controls autoplay muted loop&gt;오류 시 출력문&lt;/video&gt;
+                <br>
+                <video src="media/movie.mp4" width="200" height="200" controls></video>
+                <br>autoplay는 보안상 잘 안쓰는 인자<br>
+                &lt;source src="비디오 위치 type=(MP4,WebM,Ogg)&gt;&lt;/source&gt;로 타입 지정 가능
+            </details>
+            <details>
+                <summary>오디오</summary>
+                &lt;audio src="오디오 주소" ...&gt;오류 시 출력문&lt;/audio&gt;
+                <br>
+                <audio src="media/audio.mp3" controls loop>ERROR</audio>
+                <br>
+                <details>
+                    <summary>오류로 여러 개 대기 가능</summary>
+                    &lt;audio controls&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="오디오 1번 위치 type=(mp3,mpeg,ogg)&gt;&lt;/source&gt; 1번 시도<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="오디오 2번 위치 type=(mp3,mpeg,ogg)&gt;&lt;/source&gt; 1번 안될 시 시도<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;안되면 text
+                    <br>
+                    <audio controls>
+                        <source src="media/audio1.mp3" type="audio/mp3">
+                        <source src="media/audio2.mp3" type="audio/mp3">
+                        ERROR
+                    </audio>
+                </details>
+            </details>
+        </details>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="2.html">다음 장</a>
